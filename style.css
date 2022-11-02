@@ -1,0 +1,383 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.container {
+    width: 100%;
+    height: 100vh;
+    background-color: #fff;
+    background-image: url('/over.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.overlay{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.756);
+}
+
+.navbar {
+    width: 100%;
+    height: 10vh;
+    /* padding: 20px; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* border: 1px solid black; */
+}
+
+.logo {
+    margin-left: 20px;
+}
+
+.logo:hover{
+    cursor: pointer;
+}
+
+nav ul li {
+    display: inline-block;
+    list-style: none;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: rgb(79, 78, 78);
+    margin-left: 20px;
+}
+
+#fn {
+    color: black;
+    font-weight: 700;
+}
+
+.button button {
+    width: 100px;
+    margin-right: 20px;
+    padding: 12px 22px;
+    border: none;
+    outline: none;
+}
+
+.button #fbutt {
+    color: black;
+    background-color: white;
+}
+
+.button #fbutt:hover{
+    background-color: rgb(202, 200, 200);
+    color: black;
+    cursor: pointer;
+}
+
+.button #lbutt {
+    color: white;
+    background-color: rgb(5, 5, 61);
+}
+
+.button #lbutt:hover{
+    color: yellow;
+    cursor: pointer;
+}
+
+.main {
+    display: flex;
+    width: 100%;
+    height: 70vh;
+    /* border: 1px solid black; */
+}
+
+.right {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 50%;
+    height: 100%;
+    /* border: 1px solid red; */
+}
+
+.box {
+    width: 40%;
+    height: 90%;
+    margin-left: 15px;
+    /* border: 1px solid black; */
+    box-shadow: 0px 30px 50px rgba(0, 0, 0, 0.284);
+
+}
+
+.right{
+    animation: opac 2s 1 linear ;
+}
+
+@keyframes opac {
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+
+.right #fbox {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    background-image: url('/main.jpg');
+    background-size: cover;
+    background-position: 1%;
+
+}
+
+.lbox{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 250px;
+    height: 150px;
+    background-color: white;
+    margin-bottom: 20px;
+}
+
+.lbox:hover{
+    cursor: pointer;
+}
+
+.layout{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 45%;
+    height: 80%;
+    background-color: rgb(8, 83, 141);
+    margin-left: 10px;
+}
+
+.layout i{
+    font-size: 60px;
+    color: white;
+}
+
+.lbox_details{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    height: 100%;
+    color: rgb(75, 74, 74);
+    /* background-color: gray; */
+}
+
+.lbox_details h2{
+    color: red;
+}
+
+.right #sbox {
+    display: flex;
+    justify-content: flex-end;
+    background-image: url('/main.jpg');
+    background-size: cover;
+    background-position: 70%;
+}
+
+#sbox .circle{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    width: 60px;
+    height: 60px;
+    background-color: yellow;
+    border-radius: 100px;
+    border: 2px solid white;
+    margin-right: 10px;
+    margin-top: 10px;
+
+}
+.circle h1{
+    font-size: 40px;
+    font-weight: 900;
+    margin-bottom: 6px;
+}
+
+.circle:hover{
+    cursor: pointer;
+}
+
+.left {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    width: 50%;
+    height: 100%;
+    /* border: 1px solid blue; */
+}
+
+.left h1 {
+    margin-left: 100px;
+    font-size: 70px;
+    line-height: 1.2;
+}
+
+.left .dark {
+    color: rgb(5, 59, 30);
+    font-weight: 700;
+}
+
+.left .light {
+    color: rgb(100, 99, 99);
+    font-weight: 400;
+}
+
+.left p {
+
+    margin-left: 100px;
+    font-size: 23px;
+    color: black;
+    margin-top: 20px;
+}
+
+.left .main_butt {
+    margin-left: 100px;
+}
+
+.left .main_butt button {
+    width: 150px;
+    padding: 12px;
+    /* margin-right: 20px; */
+    /* padding: 12px 22px; */
+    border: none;
+    outline: none;
+    margin-top: 20px;
+}
+
+.main_butt #fmainbutton {
+    background-color: rgb(29, 205, 132);
+    color: white;
+    font-weight: 600;
+}
+
+.main_butt #fmainbutton:hover{
+    background-color: rgb(15, 170, 83);
+}
+
+.main_butt #smainbutton {
+    background-color: rgb(71, 71, 71);
+    color: white;
+    font-weight: 600;
+}
+
+.main_butt #smainbutton:hover{
+    background-color: gray;
+}
+
+.last {
+    width: 100%;
+    height: 20vh;
+    display: flex;
+    /* border: 1px solid black; */
+}
+
+.lleft {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.lleft .para {
+    width: 400px;
+    height: 50px;
+    /* border: 1px solid red; */
+    margin-left: 100px;
+    font-size: 15px;
+    color: black;
+}
+
+.lleft .email {
+    /* padding-left: 20px; */
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 300px;
+    height: 50px;
+    /* background-color: rgba(128, 128, 128, 0.24); */
+    margin-left: 100px;
+    margin-top: 10px;
+}
+
+.email button {
+    width: 250px;
+    height: 40px;
+    /* padding: 12px 22px; */
+    /* margin-right: 50px; */
+    border: none;
+    outline: none;
+    background-color: rgb(29, 205, 132);
+    color: white;
+    font-weight: 600;
+    /* font-size: 25px; */
+}
+
+.email button:hover{
+    background-color: rgb(10, 67, 6);
+}
+
+.lright {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bar {
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: flex-start;
+    background-color: rgba(185, 255, 229, 0.382);
+    font-size: 23px;
+
+}
+
+
+
+.sec {
+    width: 20%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* border: 1px solid black; */
+}
+
+.sec h2{
+    color:rgb(8, 56, 36);
+}
+
+.sec h5{
+    color: rgb(82, 82, 82);
+}
+
+.sec:hover{
+    background-color: rgb(242, 239, 239);
+}
+
+.bar #fsec {
+    background-color: rgb(29, 205, 132);
+
+}
+.bar #fsec h2{
+    color: white;
+}
+.bar #fsec h5{
+    color: white;
+}
