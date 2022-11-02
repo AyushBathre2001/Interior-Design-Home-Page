@@ -23,11 +23,9 @@
 .navbar {
     width: 100%;
     height: 10vh;
-    /* padding: 20px; */
     display: flex;
     justify-content: space-between;
     align-items: center;
-    /* border: 1px solid black; */
 }
 
 .logo {
@@ -48,7 +46,6 @@ nav ul li a {
     color: rgb(79, 78, 78);
     margin-left: 20px;
     font-size: 1vw;
-  
 }
 
 #fn {
@@ -60,10 +57,10 @@ nav ul li a {
     width: 7vw;
     height: 3vw;
     margin-right: 20px;
-    /* padding: 12px 22px; */
     border: none;
     outline: none;
     font-size: 1vw;
+    cursor: pointer;
 }
 
 .button #fbutt {
@@ -110,12 +107,12 @@ nav ul li a {
 }
 
 .menu ul{
-    margin-top: 40px;
+    margin-top: 10px;
 }
 
 .menu ul li{
     list-style: none;
-    margin-bottom: 30px;
+    margin-bottom: 10px;
 
 }
 .menu ul li a{
@@ -129,7 +126,6 @@ nav ul li a {
     display: flex;
     width: 100%;
     height: 30vw;
-    /* border: 1px solid black; */
 }
 
 .right {
@@ -138,20 +134,14 @@ nav ul li a {
     align-items: center;
     width: 50%;
     height: 100%;
-    /* border: 1px solid red; */
 }
 
 .box {
     width: 40%;
     height: 30vw;
     margin-left: 15px;
-    /* border: 1px solid black; */
- 
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-
 }
-
-
 
 .right #fbox {
     display: flex;
@@ -160,8 +150,6 @@ nav ul li a {
     background-image: url('/main.jpg');
     background-size: cover;
     background-position: 1%;
-
-
 }
 
 .lbox{
@@ -172,6 +160,7 @@ nav ul li a {
     height: 8vw;
     background-color: white;
     margin-bottom: 20px;
+    transition: all cubic-bezier(0.19, 1, 0.22, 1) 0.5s;
 }
 
 .lbox:hover{
@@ -185,7 +174,7 @@ nav ul li a {
     width: 45%;
     height: 80%;
     background-color: rgb(8, 83, 141);
-    margin-left: 10px;
+    margin-left: 5px;
 }
 
 .layout i{
@@ -201,7 +190,10 @@ nav ul li a {
     width: 50%;
     height: 100%;
     color: rgb(75, 74, 74);
-    /* background-color: gray; */
+}
+
+.lbox:hover{
+    box-shadow: 0px 0px 5px white;
 }
 
 .lbox_details h2{
@@ -221,29 +213,6 @@ nav ul li a {
     background-position: 70%;
 }
 
-#sbox .circle{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: black;
-    width: 4vw;
-    height: 4vw;
-    background-color: yellow;
-    border-radius: 100px;
-    border: 2px solid white;
-    margin-right: 10px;
-    margin-top: 10px;
-
-}
-.circle h1{
-    font-size: 2vw;
-    font-weight: 900;
-    margin-bottom: 6px;
-}
-
-.circle:hover{
-    cursor: pointer;
-}
 
 .left {
     display: flex;
@@ -252,7 +221,6 @@ nav ul li a {
     align-items: flex-start;
     width: 50%;
     height: 100%;
-    /* border: 1px solid blue; */
 }
 
 .left h1 {
@@ -283,19 +251,16 @@ nav ul li a {
     margin-left: 100px;
     width: 25vw;
     height: 5vw;
-    /* border: 1px solid red; */
 }
 
 .left .main_butt button {
     width: 48%;
     height: 60%;
-    /* padding: 12px; */
-    /* margin-right: 20px; */
-    /* padding: 12px 22px; */
     border: none;
     outline: none;
     margin-top: 20px;
     font-size: 1vw;
+    cursor: pointer;
 }
 
 .main_butt #fmainbutton {
@@ -322,7 +287,6 @@ nav ul li a {
     width: 100%;
     height: 20vh;
     display: flex;
-    /* border: 1px solid black; */
 }
 
 .lleft {
@@ -339,21 +303,17 @@ nav ul li a {
     align-items: flex-end;
     width: 30vw;
     height: 50px;
-    /* border: 1px solid red; */
     margin-left: 100px;
     font-size: 1vw;
     color: black;
 }
 
 .lleft .email {
-    /* padding-left: 20px; */
     display: flex;
     justify-content: flex-start;
     align-items: center;
     width: 20vw;
     height: 5vw;
-    /* border: 1px solid red; */
-    /* background-color: rgba(128, 128, 128, 0.24); */
     margin-left: 100px;
     margin-top: 10px;
 }
@@ -361,14 +321,13 @@ nav ul li a {
 .email button {
     width: 80%;
     height: 60%;
-    /* padding: 12px 22px; */
-    /* margin-right: 50px; */
     border: none;
     outline: none;
     background-color: rgb(29, 205, 132);
     color: white;
     font-weight: 600;
     font-size: 1vw;
+    cursor: pointer;
 }
 
 .email button:hover{
@@ -381,7 +340,6 @@ nav ul li a {
     display: flex;
     justify-content: center;
     align-items: center;
-    
 }
 
 .bar {
@@ -391,10 +349,7 @@ nav ul li a {
     justify-content: flex-start;
     background-color: rgba(185, 255, 229, 0.382);
     font-size: 1.5vw;
-
 }
-
-
 
 .sec {
     width: 20%;
@@ -403,7 +358,8 @@ nav ul li a {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    /* border: 1px solid black; */
+    cursor: pointer;
+
 }
 
 .sec h2{
@@ -535,6 +491,20 @@ nav ul li a {
 
     .email button{
         font-size: 6px;
+    }
+
+    .menu ul{
+        margin-top: 40px;
+    }
+    
+    .menu ul li{
+     
+        margin-bottom: 20px;
+    
+    }
+
+    #sbox .circle{
+        display: none;
     }
   
 }
