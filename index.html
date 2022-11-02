@@ -14,14 +14,14 @@
     <div class="container">
         <div class="overlay">
 
-            
+
             <div class="navbar">
-                
-                
+
+
                 <div class="logo">
                     <img src="/logo.png" width="40px">
                 </div>
-                
+
                 <nav>
                     <ul>
                         <li><a id="fn" href="">Home</a></li>
@@ -31,21 +31,35 @@
                         <li><a href="">FAQ</a></li>
                     </ul>
                 </nav>
-                
+
                 <div class="button">
                     <button id="fbutt" type="button">Log in</button>
-                <button id="lbutt" type="button">Sign up</button>
+                    <button id="lbutt" type="button">Sign up</button>
+                </div>
+
+                <button id="hamburger" type="button"><i class="ri-menu-line"></i></button>
+
             </div>
-            
-        </div>
-        
-        <div class="main">
-            <div class="left">
-                <h1 class="dark">Make Room</h1>
-                <h1 class="light">for better</h1>
-                <h1 class="dark">living</h1>
-                <p>We combine Interior and Exterior design services and often provide them as a single solution. It
-                    helps us...</p>
+
+
+            <div class="main">
+
+
+                <div class="menu">
+                    <ul>
+                        <li><a id="fn" href="">Home</a></li>
+                        <li><a href="">Key features</a></li>
+                        <li><a href="">Pricing</a></li>
+                        <li><a href="">Testiminial</a></li>
+                        <li><a href="">FAQ</a></li>
+                    </ul>
+                </div>
+                <div class="left">
+                    <h1 class="dark">Make Room</h1>
+                    <h1 class="light">for better</h1>
+                    <h1 class="dark">living</h1>
+                    <p>We combine Interior and Exterior design services and often provide them as a single solution. It
+                        helps us...</p>
                     <div class="main_butt">
                         <button id="fmainbutton" type="button">Start now</button>
                         <button id="smainbutton" type="button">Read more</button>
@@ -72,41 +86,54 @@
                     </div>
                 </div>
             </div>
-            
+
             <div class="last">
                 <div class="lleft">
                     <div class="para">
-                        
+
                         <p>Nor again is there anyone who loves or pursues or desires to obtain pain of itself</p>
                     </div>
                     <div class="email">
-                        <button type="button">Enter your Email	&rarr;</button>
-                </div>
+                        <button type="button">Enter your Email &rarr;</button>
+                    </div>
 
-            </div>
-            <div class="lright">
-                <div class="bar">
-                    <div id = "fsec" class="sec">
-                        <h2>10+</h2>
-                        <h5>Restarunt</h5>
-                    </div>
-                    <div class="sec">
-                        <h2>109</h2>
-                        <h5>Rooms</h5>
-                    </div>
-                    <div class="sec">
-                        <h2>29</h2>
-                        <h5>GMY</h5>
-                    </div>
-                    <div class="sec">
-                        <h2>7</h2>
-                        <h5>Beech</h5>
+                </div>
+                <div class="lright">
+                    <div class="bar">
+                        <div id="fsec" class="sec">
+                            <h2>10+</h2>
+                            <h5>Restarunt</h5>
+                        </div>
+                        <div class="sec">
+                            <h2>109</h2>
+                            <h5>Rooms</h5>
+                        </div>
+                        <div class="sec">
+                            <h2>29</h2>
+                            <h5>GMY</h5>
+                        </div>
+                        <div class="sec">
+                            <h2>7</h2>
+                            <h5>Beech</h5>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-    </div>
+
+    <script>
+        let hamb = document.getElementById("hamburger")
+        let mn = document.getElementsByClassName("menu")[0]
+        hamb.addEventListener('click',()=>{
+            if(mn.style.left === "-100%"){
+                mn.style.left = "0%"
+            }
+            else{
+                mn.style.left = "-100%"
+            }
+        })
+    </script>
 </body>
 
 </html>
